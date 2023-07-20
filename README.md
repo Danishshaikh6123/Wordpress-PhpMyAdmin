@@ -50,7 +50,7 @@ Steps :-
 - You should see 3 container running in docker ps.
 
 - You have to open following Ports in security group.
-   - update 8000 to access Wordpress webpage.
+   - update 80 to access Wordpress webpage.
    - update 3306 to access Mysql Database.
    - update 8080 to access Mysql Database with phpmyadmin GUI interface.
 
