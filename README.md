@@ -1,6 +1,5 @@
 #  #Wordpress-PhpMyAdmin
-- Here we are hosting website in Wordpress using docker compose.
-- In this project we are going to install Wordpress, mysql database and phpmyadmin.
+- Here we are going to install Wordpress, mysql database and phpmyadmin using docker compose.
 
 # Project Overview
 - Ubuntu based **EC2 instance**.
