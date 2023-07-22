@@ -1,58 +1,47 @@
-#  #Wordpress-PhpMyAdmin
-- Here we are going to install Wordpress, mysql database and phpmyadmin using docker compose.
 
-# Project Overview
-- Ubuntu based **EC2 instance**.
-- 3 docker container using docker compose.
-1. Wordpress
-2. PhpMyAdmin
-3. Mysql
+# #Wordpress-PhpMyAdmin
 
-# Getting Started
-Steps :-
-- Launch EC2 Instance with Ubuntu OS.
+🚀 Here we are going to install Wordpress, Mysql database and Phpmyadmin using docker compose.
 
-- Connect to the instance with SSH.
+🚀 Host the website using Wordpress in dockerize environment.
 
-- Update the packages using below command.
+# Prerequisites
 
-  **$ sudo apt-get update -y**
-
-- Now Install Docker on the server using below command.
-
-  **$ sudo apt-get install docker.io -y**
-
-- Now use below commands to Install docker-compose as we are usining docker compose to create containers at one go.
-
-  **$ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose**
-
-  **$ sudo chmod +x /usr/local/bin/docker-compose**
-
-- Use the below command to check the docker-compose version.
-
-  **$ docker-compose --version**
-
-- clone this repo to your ubuntu machine to get the source code for this project
-
-  **$ git clone https://github.com/Danishshaikh6123/Wordpress-PhpMyAdmin.git**
-  
-  NOTE: You can also Fork this repo to get the code in your github repository.
-
-- Go to the **Wordpress-PhpMyAdmin** directory.
+-  Make sure you have AWS account and EC2 created with ubuntu image. 
    
-  **$ cd Wordpress-PhpMyAdmin**
-
-- Now use below command to create the all 3 containers.
-  
-  **$ sudo docker-compose up -d**
-
-- You should see 3 container running in docker ps.
-
-- You have to open following Ports in security group.
-   - update 80 to access Wordpress webpage.
-   - update 3306 to access Mysql Database.
-   - update 8080 to access Mysql Database with phpmyadmin GUI interface.
+   - [How to create EC2 on AWS.](https://docs.aws.amazon.com/efs/latest/ug/gs-step-one-create-ec2-resources.html) 
 
 
-  
-  
+-  Install Docker and Docker Compose in Ubuntu.
+
+
+   - [Install Docker and Docker compose](https://docs.docker.com/engine/install/ubuntu/)
+
+-  You have to open following Ports in security group.
+
+   - Allow 80 to access Wordpress.
+
+   - Allow 8080 to access Phpmyadmin.
+
+
+## Getting started
+
+- Verify the docker compose version.
+
+     **$ docker-compose --version**
+
+-  Clone this repo to your ubuntu machine to get the source code of this project.   
+
+    **$ git clone** https://github.com/Danishshaikh6123/Wordpress-PhpMyAdmin.git
+
+-  Go to Wordpress-PhpMyAdmin directory.
+
+   **$ cd Wordpress-PhpMyAdmin**
+
+- Now use the below command to create the containers.
+
+   **$ sudo docker-compose up -d**
+
+- Verify the running containers.
+
+  **$ sudo docker ps**  
