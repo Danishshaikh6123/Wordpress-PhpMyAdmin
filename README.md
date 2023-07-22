@@ -44,4 +44,6 @@
 
 - Verify the running containers.
 
-  **$ sudo docker ps**  
+  **$ sudo docker ps** 
+
+- Now you can create your website. 
